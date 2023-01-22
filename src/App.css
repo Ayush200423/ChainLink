@@ -25,7 +25,6 @@ li a{
   margin-left: 15px; 
   margin-right: 15px; 
   float: left; 
-  text-align: left; 
   border-left-width: 50px;
   justify-content: space-between;  
   
@@ -70,4 +69,16 @@ a {
   margin: 4px 2px;
   font-family: "Verdana";
   
+}
+
+.logo{
+   margin-right: 600px; 
+   
+}
+
+.welcome{
+  text-align: center; 
+  margin-top: 150px;
+  margin-bottom: 200px; 
+
 }
