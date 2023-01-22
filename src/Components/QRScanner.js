@@ -47,7 +47,13 @@ const QRScanner = () => {
         </>
       )}
       {loadingScan && <p>Loading</p>}
-      {data !== "" && <p>{data}</p>}
+      {data !== "" && (
+        <p>
+          <a href={data} target="_blank" rel="noopener noreferrer">
+            {data}
+          </a>
+        </p>
+      )}
     </div>
   );
 };
