@@ -9,8 +9,15 @@ function App() {
         <div className="nav" >
           <p className="logo">LOGO</p>
           <ul>
-            <li><a href>HOME</a></li>
-            <li><a href>SCANNER</a></li>
+
+            <div className = "flexbox-container">
+           <div className = "flexboxitem-1">
+           <li><a href>HOME</a></li> </div> 
+           <div className = "flexboxitem-2"><li>
+            <a href>SCANNER</a></li>
+           </div> 
+            </div>
+
           </ul>
         </div>
         <div class="welcome">
