@@ -1,6 +1,12 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .nav{
   font-family: "Montserrat";
-  font-size: 16px;
+  font-size: 15px;
   background-color: #dddddd;
 
 }
@@ -50,7 +56,7 @@ li a{
 a {
   padding: 15px;
   
-  block-size: 300px 600px; 
+  block-size: 200px 500px; 
   display: flex; 
   justify-content: space-between; 
 
@@ -58,10 +64,7 @@ a {
 
 .welcome{
   padding: 50px; 
-  text-align: center; 
-  margin-top: 150px;
 }
-
 
 .make-button {
   background-color: #03cad1;
@@ -71,22 +74,17 @@ a {
   font-size: 15px;
   margin: 4px 2px;
   font-family: "Verdana";
-}
-
-h1{
-  margin-bottom: 150px; 
-}
-
-
-li a:hover {
-  background-color: rgb(176, 170, 170);
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
   
 }
 
+.logo{
+   margin-right: 600px; 
+   
+}
 
+.welcome{
+  text-align: center; 
+  margin-top: 150px;
+  margin-bottom: 200px; 
 
-
-
+}
