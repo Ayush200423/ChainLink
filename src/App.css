@@ -18,9 +18,11 @@
   0 0 151px #0fa;
   background-color: #4682B4;
   padding-left: 500px;
-  padding-right: 500px; 
-  text-align: center;  
-  padding-bottom: 200px; 
+  padding-right: 500px;
+  text-align: center; 
+  opacity: 0.75;  
+
+
 
 }
 
