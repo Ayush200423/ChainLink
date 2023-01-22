@@ -7,17 +7,10 @@
 .nav{
   font-family: "Montserrat";
   font-size: 15px;
-  background-color: #2a4ea8;
+  background-color: #4682B4;
 
 }
 
-
-.leftSide{
-  text-align: center; 
-  margin-top: 150px;
-
- 
-}
 ul{
   list-style-type: none;   
   margin: 0; 
@@ -72,16 +65,16 @@ a {
   padding: 80px;    
   background-image: url('/src/bg-image.png'); 
   opacity: 0.75;
- 
-  
-
- 
 }
 
-.make-button {
-  background-color: #03cad1;
+.qrscan{
+  padding: 200px;
+}
+
+
+.qrScan {
   color: rgb(217, 162, 162);
-  padding: 20px;
+  padding: 100px;
   text-align: center;
   font-size: 15px;
   margin: 4px 2px;
@@ -89,11 +82,44 @@ a {
   
 }
 
-.logo{
-   margin-right: 600px; 
-   
-}
-
+button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+  overflow: hidden;
+ }
+ 
+ button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms
+ }
+ 
+ button:hover {
+  color: #e8e8e8;
+ }
+ 
+ button:hover::before {
+  width: 100%;
+ }
 
 
 li a:hover {
@@ -103,3 +129,8 @@ li a:hover {
 .welcome{
    margin: 100px;
 }
+
+.logo{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
