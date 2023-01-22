@@ -130,6 +130,7 @@ a {
 
 button {
   padding: 15px 25px;
+  margin-top: 150px; 
   border: unset;
   border-radius: 15px;
   color: #212121;

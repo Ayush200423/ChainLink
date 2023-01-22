@@ -1,4 +1,6 @@
 import React from 'react';  
+import './newhash.css';
+
 function NewHash () {  
     return <div>  
         <h2> jAVAtPOINT is a computer science portal for TUTORIALS!</h2>  
