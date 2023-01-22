@@ -4,10 +4,31 @@
   align-items: center;
 }
 
+.App ul{
+  font-family: "Montserrat";
+  font-size: 17.5px;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #0fa,
+  0 0 82px #0fa,
+  0 0 92px #0fa,
+  0 0 102px #0fa,
+  0 0 151px #0fa;
+  background-color: #4682B4;
+  padding-left: 500px;
+  padding-right: 500px; 
+  text-align: center;  
+  padding-bottom: 200px; 
+
+}
+
 .nav{
   font-family: "Montserrat";
   font-size: 17.5px;
   background-color: #4682B4;
+  
   
 
 }
@@ -31,6 +52,7 @@ ul{
   0 0 92px #0fa,
   0 0 102px #0fa,
   0 0 151px #0fa;
+  
 
 
 }
@@ -69,9 +91,6 @@ li a{
 
 }
 
-
-
-
 a {
   padding: 15px;
   block-size: 200px 500px; 
@@ -79,7 +98,7 @@ a {
   justify-content: space-between; 
 }
 
-.mainTitle{
+.h1{
   text-align: center;
   color: white; 
   padding: 100px;    
@@ -88,7 +107,6 @@ a {
   margin-top: 0; 
 
 
-    
 
 
 }
