@@ -1,11 +1,20 @@
-import React from 'react';  
-function HashToQR () {  
-    return <div>  
-        <h2> jAVAtPOINT is a computer science portal for TUTORIALS!</h2>  
-   Read more about us at :  
-        <a href="https://www.javatpoint.in/about/">  
-            https://www.javatpoint.in/about/  
-        </a>  
-    </div>  
-}  
-export default HashToQR;  
+import React, { useState } from 'react';
+import QRCode from 'qrcode.react';
+
+const HashToQR = () => {
+  const [hash, setHash] = useState('');
+
+  return (
+    <div>
+      <input 
+        type="text" 
+        placeholder="Enter Hash" 
+        onChange={e => setHash(e.target.value)}
+        value={hash}
+      />
+      <QRCode value={hash} />
+    </div>
+  );
+};
+
+export default HashToQR;
