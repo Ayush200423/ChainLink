@@ -1,8 +1,23 @@
 
-.h1{
+h1 {
     text-align: center;
+    color: white; 
     padding: 100px;    
     background-image: url('/src/bg-image.png'); 
     opacity: 0.75;
-    margin-top: 0; 
+    padding-left: 250px; 
+    padding-right: 250px; 
+    padding-bottom: 150px;
+    margin-top: 30px; 
+   
   }
+
+p{
+  padding-top: 100px; 
+  padding-bottom: 100px; 
+  padding-left: 50px; 
+  padding-right: 50px; 
+  border-style: double;
+  border-width: 1.5mm;
+  
+}
