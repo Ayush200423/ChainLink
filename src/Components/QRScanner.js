@@ -23,8 +23,6 @@ const QRScanner = () => {
   };
   return (
     <div className="App">
-      <h1>QR Code</h1>
-
       <button
         onClick={() => {
           setStartScan(!startScan);
