@@ -1,33 +1,57 @@
-import React, { useState } from 'react';
-import QrScanner from 'react-qr-scanner';
+import { useState } from "react";
+import QrReader from "react-qr-reader";
 
-function QRScanner() {
-  const [result, setResult] = useState(null);
-  const [scanning, setScanning] = useState(false);
+const QRScanner = () => {
+  const [selected, setSelected] = useState("environment");
+  const [startScan, setStartScan] = useState(false);
+  const [loadingScan, setLoadingScan] = useState(false);
+  const [data, setData] = useState("");
 
-  const handleScan = (data) => {
-    if (data) {
-      setResult(data);
-      setScanning(false);
+  const handleScan = async (scanData) => {
+    setLoadingScan(true);
+    console.log(`loaded data data`, scanData);
+    if (scanData && scanData !== "") {
+      console.log(`loaded >>>`, scanData);
+      setData(scanData);
+      setStartScan(false);
+      setLoadingScan(false);
+      // setPrecScan(scanData);
     }
-  }
-
+  };
+  const handleError = (err) => {
+    console.error(err);
+  };
   return (
-    <div>
-      {scanning ? (
-        <QrScanner
-          onError={console.error}
-          onScan={handleScan}
-          style={{ width: '100%' }}
-        />
-      ) : (
-        <div>
-          <button onClick={() => setScanning(true)}>Scan QR</button>
-          {result && <p>Scanned QR Code: {result}</p>}
-        </div>
+    <div className="App">
+      <h1>QR Code</h1>
+
+      <button
+        onClick={() => {
+          setStartScan(!startScan);
+        }}
+      >
+        {startScan ? "Stop Scan" : "Start Scan"}
+      </button>
+      {startScan && (
+        <>
+          <select onChange={(e) => setSelected(e.target.value)}>
+            <option value={"environment"}>Back Camera</option>
+            <option value={"user"}>Front Camera</option>
+          </select>
+          <QrReader
+            facingMode={selected}
+            delay={1000}
+            onError={handleError}
+            onScan={handleScan}
+            // chooseDeviceId={()=>selected}
+            style={{ width: "300px" }}
+          />
+        </>
       )}
+      {loadingScan && <p>Loading</p>}
+      {data !== "" && <p>{data}</p>}
     </div>
   );
-}
+};
 
 export default QRScanner;

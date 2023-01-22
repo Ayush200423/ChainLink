@@ -2,6 +2,7 @@ import React, { } from 'react';
 import QRScanner from './Components/QRScanner';
 import './App.css'
 
+
 function App() {
   return (
     <div>
