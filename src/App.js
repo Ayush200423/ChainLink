@@ -22,8 +22,10 @@ function App() {
           </ul>
         </div>
         <div class="welcome">
-          <div class="leftSide">
+          <div class="mainTitle">
             <h1>Decentralized supply chain management system</h1>
+          </div>
+          <div class="qrScan">
             <QRScanner />
           </div>
         </div>

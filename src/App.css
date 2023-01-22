@@ -7,10 +7,17 @@
 .nav{
   font-family: "Montserrat";
   font-size: 15px;
-  background-color: #dddddd;
+  background-color: #2a4ea8;
 
 }
 
+
+.leftSide{
+  text-align: center; 
+  margin-top: 150px;
+
+ 
+}
 ul{
   list-style-type: none;   
   margin: 0; 
@@ -55,15 +62,20 @@ li a{
 
 a {
   padding: 15px;
-  
   block-size: 200px 500px; 
   display: flex; 
   justify-content: space-between; 
-
 }
 
-.welcome{
-  padding: 50px; 
+.mainTitle{
+  text-align: center;
+  padding: 80px;    
+  background-image: url('/src/bg-image.png'); 
+  opacity: 0.75;
+ 
+  
+
+ 
 }
 
 .make-button {
@@ -82,9 +94,12 @@ a {
    
 }
 
-.welcome{
-  text-align: center; 
-  margin-top: 150px;
-  margin-bottom: 200px; 
 
+
+li a:hover {
+  background-color: rgb(174, 168, 168);
+}
+
+.welcome{
+   margin: 100px;
 }
