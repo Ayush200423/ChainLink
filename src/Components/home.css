@@ -1,0 +1,8 @@
+
+.h1{
+    text-align: center;
+    padding: 100px;    
+    background-image: url('/src/bg-image.png'); 
+    opacity: 0.75;
+    margin-top: 0; 
+  }
