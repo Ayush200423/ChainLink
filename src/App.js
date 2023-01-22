@@ -19,10 +19,10 @@ class App extends Component {
               <Link to="/newhash">New Hash</Link>
             </li>
             <li>
-              <Link to="/scanner">Scanner</Link>
+              <Link to="/hashtoqr">Hash to QR</Link>
             </li>
             <li>
-              <Link to="/hashtoqr">Hash to QR</Link>
+              <Link to="/scanner">Scanner</Link>
             </li>
           </ul>
           <Routes>
