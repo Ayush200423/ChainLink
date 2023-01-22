@@ -1,5 +1,5 @@
 import React from 'react';  
-function About () {  
+function NewHash () {  
     return <div>  
         <h2> jAVAtPOINT is a computer science portal for TUTORIALS!</h2>  
    Read more about us at :  
@@ -8,4 +8,4 @@ function About () {
         </a>  
     </div>  
 }  
-export default About;  
+export default NewHash;  
